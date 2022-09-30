@@ -195,7 +195,7 @@ class TR_CAN_Shield {
     public:
         TR_CAN_Shield(byte can_id, bool debug);
         void can_send(byte tx_buffer, byte send_buf[8]);
-        short can_receive(byte rx_buffer_num, byte receive_buf[8]);
+        short can_receive(byte rx_buffer, byte receive_buf[8]);
         int analogRead(byte channel);
 
     private:
